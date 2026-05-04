@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+    background: linear-gradient(black, mediumpurple);
+}
+
+.button1{
+    background: linear-gradient(to right, mediumpurple, #612bd1);
+    padding: 5px 0px 5px 0;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
+    color: black;
+    font-family: Verdana, serif;
+}
+
+.button2{
+  padding: 5px 0px 5px 0;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 5px;
+  font-family: Verdana, serif;
+  background: none;
+  color: mediumpurple;
+  border: 2px solid mediumpurple;
+}
+
+.button2:hover{
+  background-color: white;
+  color: mediumpurple;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.button1:hover{
+  background: none;
+  background-color: #612bd1;
+  cursor: pointer;
+}
+
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
