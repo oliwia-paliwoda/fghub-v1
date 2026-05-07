@@ -1,5 +1,6 @@
 import "./styles/Homepage.scss"
 import {useState} from "react";
+import {useEffect} from "react";
 import {useNavigate} from "react-router-dom";
 
 function Homepage() {
@@ -10,6 +11,12 @@ function Homepage() {
     const handleNavigate = (path: string) => {
         navigate(path);
     }
+
+    useEffect(() => {
+        fetch("http://localhost:3001/")
+            .then((res) => res.json())
+            .then((data) => console.log(data.message));
+    }, []);
 
     return (
         <div className="main-container">
