@@ -22,8 +22,8 @@ function Homepage() {
         <div className="main-container">
             <div className="header">
                 <div className="buttons-overlay">
-                    <div className="button2" onClick={()=>{handleNavigate("/login")}}>Log in</div>
-                    <div className="button1" onClick={()=>{handleNavigate("/join")}}>Join</div>
+                    <div className="button2" onClick={()=>{handleNavigate("auth/login")}}>Log in</div>
+                    <div className="button1" onClick={()=>{handleNavigate("auth/join")}}>Join</div>
                 </div>
             </div>
             <div className="content">

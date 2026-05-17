@@ -4,20 +4,26 @@ import Homepage from "./views/Homepage";
 import Login from "./views/Login";
 import Join from "./views/Join";
 
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import PasswordRecovery from "./views/PasswordRecovery";
 
 function App() {
-  return (
-    <div className="App">
-        <BrowserRouter>
-            <Routes>
-            <Route path="/" element={<Homepage/>} />
-            <Route path="/login" element={<Login/>}/>
-            <Route path="/join" element={<Join/>}/>
-            </Routes>
-        </BrowserRouter>
-    </div>
-  );
+    return (
+        <div className="App">
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Homepage/>}/>
+
+                    <Route path="/auth">
+                        <Route path="login" element={<Login />} />
+                        <Route path="join" element={<Join />} />
+                        <Route path="password-recovery" element={<PasswordRecovery />} />
+                    </Route>
+
+                </Routes>
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;

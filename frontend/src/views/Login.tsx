@@ -1,10 +1,10 @@
-import "./styles/Login.scss"
+import "./styles/Auth_common.scss"
 import { Link } from "react-router-dom";
 
 
 function Login(){
    return(
-       <div className="main-container-login">
+       <div className="main-container-auth">
 
            <div className="form-box">
                <form className="form-contents">
@@ -35,13 +35,13 @@ function Login(){
                    <input type="checkbox"/>
                        Keep me logged in
                    </div>
-                   <Link to="/" className="forgot-password-link">Forgot password?</Link>
+                   <Link to="/auth/password-recovery" className="forgot-password-link">Forgot password?</Link>
                </div>
 
                <button className="button1" style={{width: "100%", height: "36px"}} type="submit">Sign in</button>
 
                    <div className="register-redirect">
-                       Need an account? <Link to="/register" className="register-link">Join here</Link>
+                       Need an account? <Link to="/auth/join" className="register-link">Join here</Link>
                    </div>
 
                </form>

@@ -1,8 +1,8 @@
-.main-container-login{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.main-container-auth{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-contents{
@@ -39,6 +39,12 @@
   width: 100%;
   color: white;
 
+}
+
+.sub-title{
+  @extend .title;
+  font-size: 1vw;
+  color: mediumpurple;
 }
 
 .form-title{
@@ -98,7 +104,7 @@ input::placeholder{
 
 .error-msg{
   font-size: 0.6vw;
-    width: 100%;
+  width: 100%;
   color: #d15757;
   margin-top:-12px;
   margin-bottom: -12px;
@@ -132,3 +138,15 @@ input::placeholder{
 
 }
 
+.login-link{
+  @extend .register-link;
+}
+
+.login-redirect{
+  @extend .register-redirect;
+}
+
+.return{
+  @extend .forgot-password-link;
+  margin-right: auto;
+}
